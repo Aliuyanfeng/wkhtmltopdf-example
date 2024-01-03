@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+}
+
+#app {
+    font-family: Microsoft YaHei, 微软雅黑;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #3c454d;
+    height: 100%;
+    width: 803px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#app .super_c {
+    color: #ad2b14;
+}
+#app .high_c {
+    color: #f85546;
+}
+#app .medium_c {
+    color: #fcab2a;
+}
+#app .low_c {
+    color: #909399;
+}
+#app .info_c {
+    color: #4eb46a;
+}
+#app .no-data {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: #909399;
+}
+#app .w100{
+    width: 100px;
+}
+#app .w120{
+    width: 120px;
+}
+#app .mb30 {
+    margin-bottom: 30px;
+}
+
+#app .fwb {
+    font-weight: bold;
+}
+
+/* 表格样式 */
+#app .report_table {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#app .report_table table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+#app .report_table table thead tr:nth-child(2n+1) {
+    background-color: #F2F2F2;
+}
+
+#app .report_table table tr {
+    height: 40px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 14px;
+    font-weight: 400;
+}
+
+#app .report_table table tr:nth-child(2n) {
+    background-color: #FAFAFA;
+}
+
+#app .report_table table thead .head {
+    font-size: 14px;
+    color: #666666;
+    line-height: 14px;
+    font-weight: 600;
+    padding: 0 10px;
+}
+#app .report_table table tbody tr {
+    page-break-before: always;
+    page-break-after: always;
+    page-break-inside: avoid;
+}
+#app .report_table table tbody tr td {
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+#app .report_table.total_vuln table thead .head {
+    width: 115px;
+}
+
+#app .report_table.host_vuln-class table thead .head {
+    width: 253px;
+}
+#app .report_table.host_vuln—rank table thead .head {
+    /* width: 21%; */
+}
+#app .report_table.host_vuln-list table thead .head {
+    /* width: 207px; */
+}
+#app .report_table.weak_detail table thead .head {
+    /* width: 166px; */
+}
+#app .report_table.s_port table thead .head {
+    /* width: 207px; */
+}
+#app .report_table.wifi table thead .head {
+    /* width: 207px; */
+}
+#app .report_table.ip_filter table thead .head {
+    /* width: 253px; */
+}
+#app .report_table.illegal_login table thead .head {
+    /* width: 253px; */
+}
+
+
+
+/* 页面样式 */
+
+#app .title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#app .subtitle {
+    font-weight: bold;
+    text-align: center;
+}
+
+#app .report-item {
+    margin-top: 20px!important;
+}
+
+#app .report-item .header {
+    background-color: #F2F2F2;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+#app .report-item .sub-item {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#app .report-item .sub-item .subheader {
+    border-left: 5px solid #1890ff;
+    padding-left: 12px;
+    font-size: 18px;
+}
+#app .report-item .sub-item .sub-list {
+    margin-top: 15px;
+    padding-left: 30px;
+}
+#app .report-item .sub-item .sub-list li {
+    line-height: 24px;
+    list-style-type: disc;
+}
+#app .report-item .sub-item .notes {
+    text-indent: 2em;
+    margin-top: 15px;
+}
+#app .report-item .sub-item .chartDom {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    page-break-inside: avoid;
+}
